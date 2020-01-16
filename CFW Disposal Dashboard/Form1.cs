@@ -19,26 +19,26 @@ namespace CFW_Disposal_Dashboard
         public Form1()
         {
             InitializeComponent();
-            
+
             tabControl1.TabPages.Clear();
             tabControl1.TabPages.Add(tabPage1);
             // ^^^ Tab removal and setup //
-                       
+
         }
 
         //  TOP MENU //
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();            
+            this.Close();
         }
-        
+
         // BUTTON 1 Create WorkOrder DashBoardPage//
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.TabPages.Remove(tabPage2);
             tabControl1.TabPages.Add(tabPage2);
             tabControl1.SelectedIndex = 1;
-          //  button1.Visible = false; //
+            //  button1.Visible = false; //
         }
 
         // BUTTON 2 Work Order Disposal Dashboard Page//
@@ -55,23 +55,31 @@ namespace CFW_Disposal_Dashboard
             tabControl1.TabPages.Add(tabPage4);
             tabControl1.SelectedIndex = 3;
         }
-        
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet4.PurchaseOrder' table. You can move, or remove it, as needed.
+            this.purchaseOrderTableAdapter.Fill(this.disposalDashboardDatabaseDataSet4.PurchaseOrder);
+            // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet4.WorkOrder' table. You can move, or remove it, as needed.
+            this.workOrderTableAdapter2.Fill(this.disposalDashboardDatabaseDataSet4.WorkOrder);
+            // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet4.Contractor' table. You can move, or remove it, as needed.
+            this.contractorTableAdapter2.Fill(this.disposalDashboardDatabaseDataSet4.Contractor);
+            // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet4.DOS' table. You can move, or remove it, as needed.
+            this.dOSTableAdapter1.Fill(this.disposalDashboardDatabaseDataSet4.DOS);
             // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet4.DisposalId' table. You can move, or remove it, as needed.
             this.disposalIdTableAdapter1.Fill(this.disposalDashboardDatabaseDataSet4.DisposalId);
             // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet3.WorkOrder' table. You can move, or remove it, as needed.
             this.workOrderTableAdapter1.Fill(this.disposalDashboardDatabaseDataSet3.WorkOrder);
-           // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet2.Contractor' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet2.Contractor' table. You can move, or remove it, as needed.
             this.contractorTableAdapter1.Fill(this.disposalDashboardDatabaseDataSet2.Contractor);
-           // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet1.Employees' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet1.Employees' table. You can move, or remove it, as needed.
             this.employeesTableAdapter.Fill(this.disposalDashboardDatabaseDataSet1.Employees);
-         
+
             // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet.DOS' table. You can move, or remove it, as needed.
             this.dOSTableAdapter.Fill(this.disposalDashboardDatabaseDataSet.DOS);
             // TODO: This line of code loads data into the 'disposalDashboardDatabaseDataSet.Contractor' table. You can move, or remove it, as needed.
             this.contractorTableAdapter.Fill(this.disposalDashboardDatabaseDataSet.Contractor);
-            
+
 
         }
         // Tab 1 Work Order Back Button //
@@ -88,7 +96,7 @@ namespace CFW_Disposal_Dashboard
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
-                        
+
         }
         // Tab 1 Work Order Save Button //
         private void button5_Click(object sender, EventArgs e)
@@ -115,7 +123,7 @@ namespace CFW_Disposal_Dashboard
         {
             WorkOrderVerify woverify = new WorkOrderVerify();
             woverify.Show();
-            
+
         }
         // Tab 2 Work Order Disposal START BUTTON //
         // When the user Clicks Start the program will select the correct disposal ID from the database based on the users disposal description selection //
@@ -123,15 +131,15 @@ namespace CFW_Disposal_Dashboard
         {
             try
             {
-             
-                if(sqlconnect.State == ConnectionState.Closed)
+
+                if (sqlconnect.State == ConnectionState.Closed)
                 {
                     sqlconnect.Open();
                     SqlCommand sqlcmd = new SqlCommand("");
-                    
+
                 }
 
-                if(comboBox5.Text == "Passenger + Light Truck With Rim up to 17.5")
+                if (comboBox5.Text == "Passenger + Light Truck With Rim up to 17.5")
                 {
                     textBox7.Text = "1";
                     string sqlSelectQuery = "SELECT * FROM DisposalId WHERE DisposalCost = 7.50" + (textBox8.Text);
@@ -140,9 +148,9 @@ namespace CFW_Disposal_Dashboard
                     if (dr.Read())
                     {
                         textBox8.Text = (dr["DisposalCost"].ToString());
-                                                
+
                         MessageBox.Show("Now Enter Quantity Click Total button");
-                        
+
                     }
                 }
 
@@ -315,23 +323,23 @@ namespace CFW_Disposal_Dashboard
                 }
                 sqlconnect.Close();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("test failed");
-                
+
             }
-                        
+
         }
         // Tab 2 Work Order Disposal SAVE BUTTON //
         // When users hit save the data will be saved to Database //
 
         private void button9_Click(object sender, EventArgs e)
         {
-            
+
             sqlconnect.Open();
             SqlCommand cmd = sqlconnect.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into [WorkOrderDisposal] (WorkOrderId,DisposalID,Quantity) values ('"+ comboBox6.Text +"','" + textBox7.Text + "','"+ textBox6.Text +"')";
+            cmd.CommandText = "insert into [WorkOrderDisposal] (WorkOrderId,DisposalID,Quantity) values ('" + comboBox6.Text + "','" + textBox7.Text + "','" + textBox6.Text + "')";
             cmd.ExecuteNonQuery();
             sqlconnect.Close();
             comboBox6.Text = "";
@@ -339,24 +347,151 @@ namespace CFW_Disposal_Dashboard
             textBox6.Text = "";
             MessageBox.Show("Work Order Disposal Saved Successfully");
         }
-        // Tab 2 Back Button
+        // Tab 2 Back Button //
         private void button10_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 0;
             button1.Visible = true;
             this.workOrderTableAdapter1.Fill(this.disposalDashboardDatabaseDataSet3.WorkOrder);
         }
-
+        // Tab 2 Total Button //
         private void button11_Click(object sender, EventArgs e)
         {
-            decimal quantity = Convert.ToDecimal(textBox6.Text);
-            decimal disposalcost = Convert.ToDecimal(textBox8.Text);
-            textBox9.Text = Convert.ToString(quantity * disposalcost);
+            if (textBox6.Text == "")
+            {
+                MessageBox.Show("ERROR you MUST enter Quantity!!!");
+            }
+            else
+            {
+                decimal quantity = Convert.ToDecimal(textBox6.Text);
+                decimal disposalcost = Convert.ToDecimal(textBox8.Text);
+                textBox9.Text = Convert.ToString(quantity * disposalcost);
+            }
         }
 
         private void label29_Click(object sender, EventArgs e)
         {
+            // accidentally double clicked the label //
+        }
 
+
+        // Tab 3 Refresh Button //
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (sqlconnect.State == ConnectionState.Closed)
+                {
+                    sqlconnect.Open();
+                    SqlCommand sqlcmd = new SqlCommand("");
+
+                }
+                string SqlSearhQuery = "SELECT * FROM WorkOrder WHERE WorkOrderId = " + (comboBox10.Text);
+                SqlCommand InvoiceCmd = new SqlCommand(SqlSearhQuery, sqlconnect);
+                SqlDataReader dr = InvoiceCmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    comboBox10.Text = (dr["WorkOrderId"].ToString());
+                    textBox10.Text = (dr["ManifestNumber"].ToString());
+                    textBox14.Text = (dr["Contractor"].ToString());
+                    textBox15.Text = (dr["DOS"].ToString());
+                    textBox4.Text = (dr["PickUpDate"].ToString());
+
+                    MessageBox.Show("it worked?");
+                    sqlconnect.Close();
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+        // Tab 3 Total Button //
+        // This Button runs 2 SQL queries and to calculate the Total invoice for the Selected work order. 
+        private void button13_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                if (sqlconnect.State == ConnectionState.Closed)
+                {
+                    sqlconnect.Open();                    
+                    SqlCommand sqlcmd = new SqlCommand("");
+
+                }
+                string TotalCostJoin = "SELECT  WorkorderDisposal.WorkOrderId, WorkOrderDisposal.Quantity, DisposalID.Id, DisposalId.DisposalCost, (DisposalCost * Quantity) AS TotalCost FROM WorkOrderDisposal INNER JOIN DisposalId ON WorkOrderDisposal.DisposalId = DisposalId.Id WHERE WorkOrderId =" + (comboBox10.Text);
+                string TotalInvoice = "SELECT SUM(DisposalCost * Quantity) AS TotalInvoice FROM WorkOrderDisposal INNER JOIN DisposalId ON WorkOrderDisposal.DisposalId = DisposalId.Id WHERE WorkOrderId =" + (comboBox10.Text);
+              
+                SqlCommand TotalCostCmd = new SqlCommand(TotalCostJoin, sqlconnect);
+                SqlCommand TotalInvoiceCmd = new SqlCommand(TotalInvoice, sqlconnect);
+                SqlDataReader dr = TotalCostCmd.ExecuteReader();
+                
+
+
+                if (dr.Read())
+                {
+                                 
+                        textBox12.Text = (dr["TotalCost"].ToString());
+
+                        MessageBox.Show("Invoice Total Calculated");
+                        sqlconnect.Close();
+                                    
+                }
+                sqlconnect.Open();
+                SqlDataReader dr2 = TotalInvoiceCmd.ExecuteReader();
+                if (dr2.Read())
+                {
+                   
+                    textBox12.Text = (dr2["TotalInvoice"].ToString());
+                    sqlconnect.Close();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
+
+
+        }
+        // Tab 3 Save button //
+        // Saves data to the Invoice table of the database //
+        private void button14_Click(object sender, EventArgs e)
+        {
+            sqlconnect.Open();
+            SqlCommand cmd = sqlconnect.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into [Invoice] (InvoiceNumber,PONumber,WorkOrderId,TotalInvoice,InvoiceDate, Notes) values ('" + textBox5.Text + "','" + comboBox7.Text + "','" + comboBox10.Text + "','"+ textBox12.Text +"','"+ dateTimePicker2.Value.ToString() +"','"+ textBox13.Text +"')";
+            cmd.ExecuteNonQuery();
+            sqlconnect.Close();
+            comboBox10.Text = "";
+            textBox5.Text = "";
+            textBox10.Text = "";
+            textBox12.Text = "";
+            dateTimePicker2.Text = "";
+            textBox9.Text = "";
+            textBox13.Text = "";
+            textBox14.Text = "";
+            textBox15.Text = "";
+            textBox4.Text = "";
+
+
+            MessageBox.Show("Invoice Saved Successfully");
+        }
+        // Tab 3 Back button //
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+            button1.Visible = true;
+            this.workOrderTableAdapter1.Fill(this.disposalDashboardDatabaseDataSet3.WorkOrder);
         }
     }
 }
