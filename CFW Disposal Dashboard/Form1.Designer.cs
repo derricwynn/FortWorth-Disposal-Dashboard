@@ -37,9 +37,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.workOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disposalDashboardDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disposalDashboardDatabaseDataSet = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -52,6 +49,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.disposalDashboardDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.disposalDashboardDatabaseDataSet = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.contractorBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.disposalDashboardDatabaseDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,9 +68,60 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.workOrderBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.disposalDashboardDatabaseDataSet3 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet3();
+            this.workOrderBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.disposalIdBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.disposalDashboardDatabaseDataSet4 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet4();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.purchaseOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.workOrderBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.workOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contractorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,81 +134,47 @@
             this.workOrderTableAdapter = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSetTableAdapters.WorkOrderTableAdapter();
             this.contractorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.contractorTableAdapter1 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet2TableAdapters.ContractorTableAdapter();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.disposalDashboardDatabaseDataSet3 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet3();
             this.disposalIdBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.disposalIdTableAdapter = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet3TableAdapters.DisposalIdTableAdapter();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.workOrderBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.workOrderTableAdapter1 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet3TableAdapters.WorkOrderTableAdapter();
-            this.workOrderBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.disposalDashboardDatabaseDataSet4 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet4();
-            this.disposalIdBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.disposalIdTableAdapter1 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet4TableAdapters.DisposalIdTableAdapter();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.dOSBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dOSTableAdapter1 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet4TableAdapters.DOSTableAdapter();
+            this.contractorBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.contractorTableAdapter2 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet4TableAdapters.ContractorTableAdapter();
+            this.workOrderTableAdapter2 = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet4TableAdapters.WorkOrderTableAdapter();
+            this.purchaseOrderTableAdapter = new CFW_Disposal_Dashboard.DisposalDashboardDatabaseDataSet4TableAdapters.PurchaseOrderTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet2)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalIdBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet4)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.purchaseOrderBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalIdBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalIdBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dOSBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -271,21 +287,6 @@
             this.tabPage2.Text = "Work Order";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // workOrderBindingSource
-            // 
-            this.workOrderBindingSource.DataMember = "WorkOrder";
-            this.workOrderBindingSource.DataSource = this.disposalDashboardDatabaseDataSetBindingSource;
-            // 
-            // disposalDashboardDatabaseDataSetBindingSource
-            // 
-            this.disposalDashboardDatabaseDataSetBindingSource.DataSource = this.disposalDashboardDatabaseDataSet;
-            this.disposalDashboardDatabaseDataSetBindingSource.Position = 0;
-            // 
-            // disposalDashboardDatabaseDataSet
-            // 
-            this.disposalDashboardDatabaseDataSet.DataSetName = "DisposalDashboardDatabaseDataSet";
-            this.disposalDashboardDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -390,6 +391,16 @@
             // 
             this.dOSBindingSource.DataMember = "DOS";
             this.dOSBindingSource.DataSource = this.disposalDashboardDatabaseDataSetBindingSource;
+            // 
+            // disposalDashboardDatabaseDataSetBindingSource
+            // 
+            this.disposalDashboardDatabaseDataSetBindingSource.DataSource = this.disposalDashboardDatabaseDataSet;
+            this.disposalDashboardDatabaseDataSetBindingSource.Position = 0;
+            // 
+            // disposalDashboardDatabaseDataSet
+            // 
+            this.disposalDashboardDatabaseDataSet.DataSetName = "DisposalDashboardDatabaseDataSet";
+            this.disposalDashboardDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox1
             // 
@@ -557,6 +568,190 @@
             this.tabPage3.Text = "Work Order Disposal";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(634, 104);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 33);
+            this.button11.TabIndex = 19;
+            this.button11.Text = "Total";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.workOrderBindingSource2, "WorkOrderId", true));
+            this.comboBox6.DataSource = this.workOrderBindingSource1;
+            this.comboBox6.DisplayMember = "WorkOrderId";
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(286, 104);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(100, 21);
+            this.comboBox6.TabIndex = 18;
+            this.comboBox6.ValueMember = "WorkOrderId";
+            // 
+            // workOrderBindingSource2
+            // 
+            this.workOrderBindingSource2.DataMember = "WorkOrder";
+            this.workOrderBindingSource2.DataSource = this.disposalDashboardDatabaseDataSet3;
+            // 
+            // disposalDashboardDatabaseDataSet3
+            // 
+            this.disposalDashboardDatabaseDataSet3.DataSetName = "DisposalDashboardDatabaseDataSet3";
+            this.disposalDashboardDatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // workOrderBindingSource1
+            // 
+            this.workOrderBindingSource1.DataMember = "WorkOrder";
+            this.workOrderBindingSource1.DataSource = this.disposalDashboardDatabaseDataSet3;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DataSource = this.disposalIdBindingSource1;
+            this.comboBox5.DisplayMember = "DisposalDescription";
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(284, 178);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(330, 21);
+            this.comboBox5.TabIndex = 17;
+            this.comboBox5.ValueMember = "DisposalDescription";
+            // 
+            // disposalIdBindingSource1
+            // 
+            this.disposalIdBindingSource1.DataMember = "DisposalId";
+            this.disposalIdBindingSource1.DataSource = this.disposalDashboardDatabaseDataSet4;
+            // 
+            // disposalDashboardDatabaseDataSet4
+            // 
+            this.disposalDashboardDatabaseDataSet4.DataSetName = "DisposalDashboardDatabaseDataSet4";
+            this.disposalDashboardDatabaseDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(715, 155);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 45);
+            this.button10.TabIndex = 16;
+            this.button10.Text = "Back";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(715, 104);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 33);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "Save";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(555, 104);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 33);
+            this.button8.TabIndex = 14;
+            this.button8.Text = "Start";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(165, 140);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(95, 20);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Disposal ID:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(413, 256);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(85, 20);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "Total Cost:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(165, 256);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(111, 20);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "Disposal Cost:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(165, 216);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(72, 20);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "Quantity:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(165, 180);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(93, 20);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Description:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(504, 256);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(112, 20);
+            this.textBox9.TabIndex = 8;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(286, 256);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 7;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(286, 142);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(100, 18);
+            this.textBox7.TabIndex = 6;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(286, 216);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 5;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(165, 104);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(115, 20);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Work Order ID:";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -569,17 +764,21 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.comboBox7);
+            this.tabPage4.Controls.Add(this.textBox15);
+            this.tabPage4.Controls.Add(this.textBox14);
+            this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Controls.Add(this.comboBox10);
+            this.tabPage4.Controls.Add(this.button15);
+            this.tabPage4.Controls.Add(this.button14);
+            this.tabPage4.Controls.Add(this.button13);
+            this.tabPage4.Controls.Add(this.button12);
             this.tabPage4.Controls.Add(this.textBox13);
-            this.tabPage4.Controls.Add(this.dateTimePicker3);
             this.tabPage4.Controls.Add(this.comboBox9);
             this.tabPage4.Controls.Add(this.dateTimePicker2);
-            this.tabPage4.Controls.Add(this.comboBox8);
-            this.tabPage4.Controls.Add(this.comboBox7);
             this.tabPage4.Controls.Add(this.textBox12);
-            this.tabPage4.Controls.Add(this.textBox11);
             this.tabPage4.Controls.Add(this.textBox10);
             this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox4);
             this.tabPage4.Controls.Add(this.label30);
             this.tabPage4.Controls.Add(this.label29);
             this.tabPage4.Controls.Add(this.label28);
@@ -600,6 +799,276 @@
             this.tabPage4.Text = "Invoice";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // comboBox7
+            // 
+            this.comboBox7.DataSource = this.purchaseOrderBindingSource;
+            this.comboBox7.DisplayMember = "PONumber";
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(608, 187);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(200, 21);
+            this.comboBox7.TabIndex = 32;
+            this.comboBox7.ValueMember = "PONumber";
+            // 
+            // purchaseOrderBindingSource
+            // 
+            this.purchaseOrderBindingSource.DataMember = "PurchaseOrder";
+            this.purchaseOrderBindingSource.DataSource = this.disposalDashboardDatabaseDataSet4;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(608, 256);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(201, 20);
+            this.textBox15.TabIndex = 31;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(608, 226);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(201, 20);
+            this.textBox14.TabIndex = 30;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(608, 287);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(201, 20);
+            this.textBox4.TabIndex = 29;
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.DataSource = this.workOrderBindingSource3;
+            this.comboBox10.DisplayMember = "WorkOrderId";
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(293, 126);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(99, 21);
+            this.comboBox10.TabIndex = 28;
+            this.comboBox10.ValueMember = "WorkOrderId";
+            // 
+            // workOrderBindingSource3
+            // 
+            this.workOrderBindingSource3.DataMember = "WorkOrder";
+            this.workOrderBindingSource3.DataSource = this.disposalDashboardDatabaseDataSet4;
+            // 
+            // button15
+            // 
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(733, 134);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 35);
+            this.button15.TabIndex = 27;
+            this.button15.Text = "Back";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Location = new System.Drawing.Point(733, 93);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 35);
+            this.button14.TabIndex = 26;
+            this.button14.Text = "Save";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Location = new System.Drawing.Point(652, 93);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 35);
+            this.button13.TabIndex = 25;
+            this.button13.Text = "Total";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(569, 93);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 35);
+            this.button12.TabIndex = 24;
+            this.button12.Text = "Start";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(292, 332);
+            this.textBox13.Multiline = true;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(517, 113);
+            this.textBox13.TabIndex = 23;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "Active",
+            "Closed"});
+            this.comboBox9.Location = new System.Drawing.Point(292, 286);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(121, 21);
+            this.comboBox9.TabIndex = 21;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(293, 254);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 20;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(292, 227);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(121, 20);
+            this.textBox12.TabIndex = 17;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(292, 187);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(121, 20);
+            this.textBox10.TabIndex = 15;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(292, 156);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 14;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(230, 332);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(55, 20);
+            this.label30.TabIndex = 12;
+            this.label30.Text = "Notes:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(500, 288);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(102, 20);
+            this.label29.TabIndex = 11;
+            this.label29.Text = "PickUp Date:";
+            this.label29.Click += new System.EventHandler(this.label29_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(171, 288);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(114, 20);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Invoice Status:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(554, 256);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(48, 20);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "DOS:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(184, 256);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(102, 20);
+            this.label26.TabIndex = 8;
+            this.label26.Text = "Invoice Date:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(514, 227);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(88, 20);
+            this.label25.TabIndex = 7;
+            this.label25.Text = "Contractor:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(184, 227);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(102, 20);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Total Invoice:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(558, 187);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(44, 20);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "PO#:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(203, 187);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(83, 20);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "Manifest#:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(210, 156);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(76, 20);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Invoice #:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(171, 126);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(115, 20);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Work Order ID:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(202, 93);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(84, 20);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "Invoice ID:";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -609,6 +1078,11 @@
             this.label4.Size = new System.Drawing.Size(127, 39);
             this.label4.TabIndex = 0;
             this.label4.Text = "Invoice";
+            // 
+            // workOrderBindingSource
+            // 
+            this.workOrderBindingSource.DataMember = "WorkOrder";
+            this.workOrderBindingSource.DataSource = this.disposalDashboardDatabaseDataSetBindingSource;
             // 
             // contractorBindingSource
             // 
@@ -675,147 +1149,6 @@
             // 
             this.contractorTableAdapter1.ClearBeforeFill = true;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(105, 98);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 20);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Work Order ID:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(226, 210);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(226, 136);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(100, 18);
-            this.textBox7.TabIndex = 6;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(226, 250);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 7;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(444, 250);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(112, 20);
-            this.textBox9.TabIndex = 8;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(105, 174);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(93, 20);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Description:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(105, 210);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(72, 20);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "Quantity:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(105, 250);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(111, 20);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Disposal Cost:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(353, 250);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 20);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Total Cost:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(105, 134);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(95, 20);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Disposal ID:";
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(495, 98);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 33);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Start";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(655, 98);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 33);
-            this.button9.TabIndex = 15;
-            this.button9.Text = "Save";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(655, 149);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 45);
-            this.button10.TabIndex = 16;
-            this.button10.Text = "Back";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.DataSource = this.disposalIdBindingSource1;
-            this.comboBox5.DisplayMember = "DisposalDescription";
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(224, 172);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(330, 21);
-            this.comboBox5.TabIndex = 17;
-            this.comboBox5.ValueMember = "DisposalDescription";
-            // 
-            // disposalDashboardDatabaseDataSet3
-            // 
-            this.disposalDashboardDatabaseDataSet3.DataSetName = "DisposalDashboardDatabaseDataSet3";
-            this.disposalDashboardDatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // disposalIdBindingSource
             // 
             this.disposalIdBindingSource.DataMember = "DisposalId";
@@ -825,258 +1158,39 @@
             // 
             this.disposalIdTableAdapter.ClearBeforeFill = true;
             // 
-            // comboBox6
-            // 
-            this.comboBox6.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.workOrderBindingSource2, "WorkOrderId", true));
-            this.comboBox6.DataSource = this.workOrderBindingSource1;
-            this.comboBox6.DisplayMember = "WorkOrderId";
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(226, 98);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(100, 21);
-            this.comboBox6.TabIndex = 18;
-            this.comboBox6.ValueMember = "WorkOrderId";
-            // 
-            // workOrderBindingSource1
-            // 
-            this.workOrderBindingSource1.DataMember = "WorkOrder";
-            this.workOrderBindingSource1.DataSource = this.disposalDashboardDatabaseDataSet3;
-            // 
             // workOrderTableAdapter1
             // 
             this.workOrderTableAdapter1.ClearBeforeFill = true;
-            // 
-            // workOrderBindingSource2
-            // 
-            this.workOrderBindingSource2.DataMember = "WorkOrder";
-            this.workOrderBindingSource2.DataSource = this.disposalDashboardDatabaseDataSet3;
-            // 
-            // disposalDashboardDatabaseDataSet4
-            // 
-            this.disposalDashboardDatabaseDataSet4.DataSetName = "DisposalDashboardDatabaseDataSet4";
-            this.disposalDashboardDatabaseDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // disposalIdBindingSource1
-            // 
-            this.disposalIdBindingSource1.DataMember = "DisposalId";
-            this.disposalIdBindingSource1.DataSource = this.disposalDashboardDatabaseDataSet4;
             // 
             // disposalIdTableAdapter1
             // 
             this.disposalIdTableAdapter1.ClearBeforeFill = true;
             // 
-            // button11
+            // dOSBindingSource1
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(574, 98);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 33);
-            this.button11.TabIndex = 19;
-            this.button11.Text = "Total";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.dOSBindingSource1.DataMember = "DOS";
+            this.dOSBindingSource1.DataSource = this.disposalDashboardDatabaseDataSet4;
             // 
-            // label19
+            // dOSTableAdapter1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(99, 96);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(84, 20);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Invoice ID:";
+            this.dOSTableAdapter1.ClearBeforeFill = true;
             // 
-            // label20
+            // contractorBindingSource3
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(68, 129);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(115, 20);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Work Order ID:";
+            this.contractorBindingSource3.DataMember = "Contractor";
+            this.contractorBindingSource3.DataSource = this.disposalDashboardDatabaseDataSet4;
             // 
-            // label21
+            // contractorTableAdapter2
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(107, 159);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 20);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Invoice #:";
+            this.contractorTableAdapter2.ClearBeforeFill = true;
             // 
-            // label22
+            // workOrderTableAdapter2
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(100, 190);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 20);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "Manifest#:";
+            this.workOrderTableAdapter2.ClearBeforeFill = true;
             // 
-            // label23
+            // purchaseOrderTableAdapter
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(455, 190);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(44, 20);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "PO#:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(81, 230);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(102, 20);
-            this.label24.TabIndex = 6;
-            this.label24.Text = "Total Invoice:";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(411, 230);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(88, 20);
-            this.label25.TabIndex = 7;
-            this.label25.Text = "Contractor:";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(81, 259);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(102, 20);
-            this.label26.TabIndex = 8;
-            this.label26.Text = "Invoice Date:";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(451, 259);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(48, 20);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "DOS:";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(68, 291);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(114, 20);
-            this.label28.TabIndex = 10;
-            this.label28.Text = "Invoice Status:";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(397, 291);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(102, 20);
-            this.label29.TabIndex = 11;
-            this.label29.Text = "PickUp Date:";
-            this.label29.Click += new System.EventHandler(this.label29_Click);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(127, 335);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(55, 20);
-            this.label30.TabIndex = 12;
-            this.label30.Text = "Notes:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(190, 128);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 13;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(189, 159);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 14;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(189, 190);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 15;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(505, 190);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(201, 20);
-            this.textBox11.TabIndex = 16;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(189, 230);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 17;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(505, 229);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(201, 21);
-            this.comboBox7.TabIndex = 18;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(506, 257);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(200, 21);
-            this.comboBox8.TabIndex = 19;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(190, 257);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 20;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(189, 289);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 21);
-            this.comboBox9.TabIndex = 21;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(506, 290);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 22;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(189, 335);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(517, 113);
-            this.textBox13.TabIndex = 23;
+            this.purchaseOrderTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -1096,32 +1210,36 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalIdBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet4)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.purchaseOrderBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disposalIdBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workOrderBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalDashboardDatabaseDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disposalIdBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dOSBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contractorBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1221,16 +1339,28 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.BindingSource dOSBindingSource1;
+        private DisposalDashboardDatabaseDataSet4TableAdapters.DOSTableAdapter dOSTableAdapter1;
+        private System.Windows.Forms.BindingSource contractorBindingSource3;
+        private DisposalDashboardDatabaseDataSet4TableAdapters.ContractorTableAdapter contractorTableAdapter2;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.BindingSource workOrderBindingSource3;
+        private DisposalDashboardDatabaseDataSet4TableAdapters.WorkOrderTableAdapter workOrderTableAdapter2;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.BindingSource purchaseOrderBindingSource;
+        private DisposalDashboardDatabaseDataSet4TableAdapters.PurchaseOrderTableAdapter purchaseOrderTableAdapter;
     }
 }
 
